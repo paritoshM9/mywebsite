@@ -1,68 +1,74 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #fefefe;
   color: #333;
   line-height: 1.6;
 }
 
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* Header */
 header {
-  background: #333;
-  color: #fff;
-  padding: 1rem 0;
   text-align: center;
+  padding: 2rem 0;
+  background: #f7f7f7;
 }
 
 header h1 {
+  font-size: 2rem;
   margin: 0;
-  font-size: 2.5rem;
 }
 
 header p {
-  margin: 0.5rem 0;
-}
-
-header nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-header nav a:hover {
-  text-decoration: underline;
+  margin: 0.5rem 0 0;
+  color: #666;
 }
 
 /* Main Content */
 main {
-  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
-main h2 {
-  color: #333;
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
   margin-top: 1.5rem;
 }
 
-article {
+.blog-list {
+  list-style: none;
+  padding: 0;
+}
+
+.blog-list li {
   margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
 }
 
-article h2 {
+.blog-list li p {
+  margin: 0.5rem 0 0;
   color: #555;
-  font-size: 1.5rem;
-}
-
-article p {
-  margin: 0.5rem 0;
 }
 
 /* Footer */
 footer {
-  background: #333;
-  color: #fff;
   text-align: center;
   padding: 1rem 0;
-  margin-top: 2rem;
+  background: #f7f7f7;
+  font-size: 0.875rem;
+  color: #666;
 }
